@@ -17,7 +17,9 @@ namespace Enemy
         // Start is called before the first frame update
         private void Start()
         {
-            Shoot();
+            Invoke("Shoot", 1f);
+            Invoke("Shoot", 1.5f);
+            Invoke("Shoot", 2f);
             Destroy(this.gameObject, livingTime);
         }
 
